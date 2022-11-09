@@ -80,117 +80,133 @@
             </div>
         </div>
     </section>
-    <section class="hidden" id="graficos" class="graf-section">
-        <div class="graf-title">
-            <h2>Gráficos gerados pelo programa:</h2>
+    <div id="TempoInter" class="dom" class="hidden">
+        <h2 id="intercept" class="hidden" align="center"></h2>
+    </div>
+    <section class="hidden" id="graphs" class="graf-section">
+        <div class="graf-title"  class="hidden" >
+            <h2>Gráficos gerados pelo programa</h2>
         </div>
         <div class="graf-container">
             <div class="graficos">
-                <h2 class="graf-subtitles">Gráfico das trajetórias da bola e do robô em um plano xy, até o ponto de interceptação:</h2>
-                <p>Gráfico da trajetória do robo e da bola até o instante da interceptação:</p>
-                <div id="trajetoria" class="graf-canvas"></div>
-                <p>Gráfico da componente x da posição pelo tempo:</p>
-                <div id="xRoboBola" class="graf-canvas"></div>
-                <p>Gráfico da componente y da posição pelo tempo:</p>
-                <div id="yRoboBola" class="graf-canvas"></div>
+                <h2 class="graf-subtitles" class="hidden" >Gráfico das trajetórias da bola e do robô em um plano xy, até o ponto de interceptação:</h2>
+                <section class="hidden">
+                    <p>Gráfico da trajetória do robo e da bola até o instante da interceptação:</p>
+                    <div id="trajetoria" class="graf-canvas"></div>
+                </section>
+                <section class="hidden">
+                    <p>Gráfico da componente x da posição pelo tempo:</p>
+                    <div id="xRoboBola" class="graf-canvas"></div>
+                </section>
+                <section class="hidden">
+                    <p>Gráfico da componente y da posição pelo tempo:</p>
+                    <div id="yRoboBola" class="graf-canvas"></div>
+                </section>    
+                </div>
+            <div class="graficos">
+                <h2 class="graf-subtitles"  class="hidden" >Gráfico dos componentes vx e vy da velocidade da bola e do robô em função do tempo t até o instante de interceptação:</h2>
+                <section class="hidden">    
+                    <p>Velocidade do Robo e da Bola no eixo X:</p>
+                    <div id="vxRoboBola" class="graf-canvas"></div>
+                </section>
+                <section class="hidden">
+                    <p>Velocidade do Robo e da Bola no eixo Y:</p>
+                    <div id="vyRoboBola" class="graf-canvas"></div>
+                </section>
             </div>
             <div class="graficos">
-                <h2 class="graf-subtitles">Gráfico dos componentes vx e vy da velocidade da bola e do robô em função do tempo t até o instante de interceptação:</h2>
-                <p>Velocidade do Robo e da Bola no eixo X:</p>
-                <div id="vxRoboBola" class="graf-canvas"></div>
-                <p>Velocidade do Robo e da Bola no eixo Y:</p>
-                <div id="vyRoboBola" class="graf-canvas"></div>
+                <h2 class="graf-subtitles"  class="hidden" >Gráfico dos componentes ax e ay da aceleração da bola e do robô em função do tempo t até o instante de interceptação:</h2>
+                <section class="hidden">
+                    <p>Gráfico da aceleração pelo tempo no eixo x:</p>
+                    <div id="axRoboBola" class="graf-canvas "></div>
+                </section>
+                <section class="hidden">    
+                    <p>Gráfico da aceleração pelo tempo no eixo y:</p>
+                    <div id="ayRoboBola" class="graf-canvas"></div>
+                </section>
             </div>
             <div class="graficos">
-                <h2 class="graf-subtitles">Gráfico dos componentes ax e ay da aceleração da bola e do robô em função do tempo t até o instante de interceptação:</h2>
-                <p>Gráfico da aceleração pelo tempo no eixo x:</p>
-                <div id="axRoboBola" class="graf-canvas"></div>
-                <p>Gráfico da aceleração pelo tempo no eixo y:</p>
-                <div id="ayRoboBola" class="graf-canvas"></div>
-            </div>
-            <div class="graficos">
-                <h2 class="graf-subtitles"> Gráfico da distância relativa d entre o robô e a bola como função do tempo t até o instante de interceptação;</h2>
-                <div id="distanciaRelativa" class="graf-canvas"></div>
+                <h2 class="graf-subtitles" class="hidden" > Gráfico da distância relativa d entre o robô e a bola como função do tempo t até o instante de interceptação:</h2>
+                <section class="hidden">
+                    <div id="distanciaRelativa" class="graf-canvas"></div>
+                </section>    
             </div>
         </div>
     </section>
-    <section id="six" class="hidden" id="infos" class="graf-section">
-        <h2 class="graf-title">Informações cinemáticas relevantes:</h2>
+    <section id="info" id="six" class="hidden">
+        <div class="graf-title" class="hidden" >
+            <h2>Informações cinemáticas relevantes</h2>
+        </div>
         <div class="infos">
             <div>
                 <h3>Dados sobre o robo:</h3>
-                <p>Aceleração = <span id="a_robo">
-                    <input id="aceleracaoRobo" type="text">
-                </span></p>
-                <p>Velocidade máxima = <span id="v_robo">
-                    <input id="velocidadeMax" type="text">
-                </span></p>
-                <p>Massa = <span id="massa_robo">
-                    <input id="massaRobo" type="text">
-                </span></p>
+                Aceleração = <div id="aceleracaoRobo"></div>
+                Velocidade máxima = <div id="velocidadeMax" type="text"></div>
+                Massa = <div id="massaRobo" type="text"></div>
+                
             </div>
             <div>
                 <h3>Posição da bola no momento da interceptação:</h3>
-                <p>x = <span id="x_bola">
-                    <input id="vetorBolaXIntercept" type="text">
-                </span></p>
-                <p>y = <span id="y_bola">
-                    <input id="vetorBolaYIntercept" type="text">
-                </span></p>
+                <p>
+                    <div id="vetorBolaXIntercept" type="text"></div>
+                </p>
+                <p>
+                    <div id="vetorBolaYIntercept" type="text"></div>
+                </p>
             </div>
             <div>
                 <h3>Posição do robo no momento da interceptação:</h3>
-                <p>x = <span>
-                    <input id="roboXIntercept" type="text">
-                </span></p>
-                <p>y = <span>
-                    <input id="roboYIntercept" type="text">
-                </span></p>
+                <p> 
+                    <div id="roboXIntercept" type="text"></div>
+                </p>
+                <p> 
+                    <div id="roboYIntercept" type="text"></div>
+                </p>
             </div>
             <div>
                 <h3>Velocidade da bola no momento da interceptação:</h3>
-                <p>vx = <span>
-                    <input id="velocidadeXBolaIntercept" type="text">
-                </span></p>
-                <p>vy = <span>
-                    <input id="velocidadeYBolaIntercept" type="text">
-                </span></p>
+                <p>
+                    <div id="velocidadeXBolaIntercept" type="text"></div>
+                </p>
+                <p> 
+                    <div id="velocidadeYBolaIntercept" type="text"></div>
+                </p>
             </div>
             <div>
                 <h3>Velocidade do robo no momento da interceptação:</h3>
-                <p>vx = <span>
-                    <input id="velocidadeRoboXIntercept" type="text">
-                </span></p>
-                <p>vy = <span>
-                    <input id="velocidadeRoboYIntercept" type="text">
-                </span></p>
+                <p> 
+                    <div id="velocidadeRoboXIntercept" type="text"></div>
+                </p>
+                <p> 
+                    <div id="velocidadeRoboYIntercept" type="text"></div>
+                </p>
             </div>
             <div>
                 <h3>Aceleração da bola:</h3>
-                <p>ax = <span>
-                    <input id="aceleracaoXBola" type="text">
-                </span></p>
-                <p>ay = <span>
-                    <input id="aceleracaoYBola" type="text">
-                </span></p>
+                <p> 
+                    <div id="aceleracaoXBola" type="text"></div>
+                </p>
+                <p> 
+                    <div id="aceleracaoYBola" type="text"></div>
+                </p>
             </div>
             <div>
                 <h3>Distância percorrida pelo Robo até o momento da interceptação:</h3>
-                <p>dx = <span>
-                    <input id="distanciaRoboX" type="text">
-                </span></p>
-                <p>dy = <span>
-                    <input id="distanciaRoboY" type="text">
-                </span></p>
+                <p> 
+                    <div id="distanciaRoboX" type="text"></div>
+                </p>
+                <p> 
+                    <div id="distanciaRoboY" type="text"></div>
+                </p>
             </div>
             <div>
                 <h3>Distância percorrida pela bola até o momento da interceptação:</h3>
-                <p>dx = <span>
-                    <input id="distanciaBolaX" type="text">
-                </span></p>
-                <p>dy = <span>
-                    <input id="distanciaBolaY" type="text">
-                </span></p>
+                <p> 
+                    <div id="distanciaBolaX" type="text"></div>
+                </p>
+                <p> 
+                    <div id="distanciaBolaY" type="text"></div>
+                </p>
             </div>
         </div>
     </section>

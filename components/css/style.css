@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 *{
-    box-sizing: border-box;
     margin: 0%;
     padding: 0%;
 }
@@ -254,6 +253,9 @@ h1{
 }
 
 
+#graphs{
+    display: none;
+}
 
 .graf-section{
     background-color: #D4F1F4;
@@ -265,13 +267,17 @@ h1{
 }
 .graf-title{
     color: white;
-    background-color: #05445E;
+    background-color: #e6961e;
     width: fit-content;
+    font-size: 1.3rem;
     padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    font-size: 28pt;
+    border-radius: 20px;
     text-align: center;
     margin: 1rem auto;
+}
+.graf-subtitles{
+    font-size: 1.4rem;
+    text-align: center;
 }
 .graf-container{
     display: grid;
@@ -293,14 +299,32 @@ h1{
     text-align: left;
     flex-direction: column;
 }
+#TempoInter{
+    height: 60vh;  
+    display: none; 
+}
+
+#info{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
 .infos{
-    display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .footer{
     text-decoration: none;
     list-style: none;
 }
+.orange{
+    color: #e6961e;
+}
+
+
 footer{
     display: flex;
     flex-direction: column;
