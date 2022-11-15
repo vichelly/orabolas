@@ -115,6 +115,8 @@ h1{
 }
 .logo img{
     height: 10vh;
+    min-height: 80px;
+    box-sizing: border-box;
 }
 #one{
     margin-bottom: 10vh;
@@ -129,7 +131,33 @@ h1{
     margin-bottom: 10vh;
 }
 
+.amigos{
+    padding-top: 10vh;
+    justify-content: center;
+    text-align: center;
+}
 
+.amigos h2{
+    padding-bottom: 20px;
+}
+
+.amigos img{
+    height: 80vw;
+    max-height: 70vh;
+}
+
+
+.description h3{
+    color: #ffa31a;
+}
+.amigos h2{
+    color: #ffa31a;
+}
+
+.description-tasks{
+    color: #979797;
+    text-align: center;
+}
 
 
 .equipe{
@@ -207,29 +235,29 @@ h1{
 @media (max-width: 498px) {
 
     
-.logo{
-    margin-top: 0.5vh;
-    margin-left: 5vh;
-    font-size: 4vh;
-    display: flex;
-    text-align: left;
-    margin-bottom: 3vh;
-    padding-top: 2vh;
-}
-#pro{
-    background-color: #ffa31a;
-    color: #131316;
-    height: 38px;
-    border-radius: 8%;
-    padding-left: 1vh;
-    padding-right: 1vh;
-    padding-bottom: 1vh;
-    margin-bottom: 3vh;
-    transition-delay: 200ms;
-}
-.logo img{
-    height: 8vh;
-}
+    .logo{
+        margin-top: 0.5vh;
+        margin-left: 5vh;
+        font-size: 4vh;
+        display: flex;
+        text-align: left;
+        margin-bottom: 3vh;
+        padding-top: 2vh;
+    }
+    #pro{
+        background-color: #ffa31a;
+        color: #131316;
+        height: 38px;
+        border-radius: 8%;
+        padding-left: 1vh;
+        padding-right: 1vh;
+        padding-bottom: 1vh;
+        margin-bottom: 3vh;
+        transition-delay: 200ms;
+    }
+    .logo img{
+        height: 8vh;
+    }
 
     .equipe{
         display: flex;
