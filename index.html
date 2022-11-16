@@ -25,12 +25,12 @@
     <section id="two">
         <h1 class="hidden">Descrição do Projeto</h1>
         <p class="hidden description">
-            O projeto Ora Bolas se trata criar um programa, e fazer com que um robô percorra um mini campo de futebol, até chegar na bola que também está em campo.
-            O principal objetivo é fazer com que o robô consiga interceptar a bola, que estará em movimento, e assim, chuta-la ao gol, isto é claro, sem deixar que a bola saia de campo.  
+            O projeto Ora Bolas se de trata de uma demonstração por meio de um programa, a ideia é fazer com que um robô percorra um mini campo de futebol, até chegar na bola que também está em campo.
+            Nosso principal objetivo é fazer com que o robô consiga interceptar a bola, que estará em movimento, e assim, chuta-la ao gol, isto é claro, sem deixar que a bola saia de campo.  
         </p>
         <p class="hidden description">
-            O robô escolhido é do tipo small size, possuindo 180mm de diâmetro, 150mm de altura, e utilizando de visão global para identificar a bola, isto é, usando uma visão de cima, que consegue ver 
-            todo o campo. Ja a bola, possui 43mm de diametro e uma massa de 46 gramas.
+            O robô escolhido é do tipo small size, possuindo 180mm de diâmetro, 150mm de altura, e utilizando de visão global para identificar a bola, isto é, usando uma visão vertical, que consegue cobrir
+            todo o campo. <br> (OBS: bola, possui 43mm de diametro e uma massa de 46 gramas.)
             Para fazer o robô pegar a bola, decidimos usar as regras do Robô FEI, um futebol de robôs feito pelos Feianos, normalmente estudantes de engenharia. 
         </p>
         <p class="hidden description">
@@ -67,16 +67,18 @@
             <div class="membros">
                 <div class="me hidden">
                     <img src="images/juan.jpeg" alt="">
-                    <h4>Juan</h4>
+                    <h4>Juan Caio Paronitti Galera</h4>
+                    RA: 22.122.067-6
                 </div>
                 <div class="me hidden">
                     <img src="images/vitor_lucas.jpeg" alt="">
-                    <h4>Vitor</h4>
+                    <h4>Vitor Lucas Fujita Felício</h4>
+                    RA: 22.122.077-5
                 </div>
                 <div class="me hidden">
                     <img src="images/rafa.jpeg" alt="">
-                    <h4>Rafa</h4>
-                    RA:2452345234523
+                    <h4>Rafael Leal Silva</h4>
+                    RA: 22.122.029-6
                 </div>
             </div>
         </div>
@@ -97,7 +99,6 @@
             </div>
             <div class="clean">
                 <button class="btn hidden" onclick="iniciarPrograma()">Entrar Valores</button>
-                <button class="btn hidden" onclick="limpa()">Limpar Valores</button>
             </div>
         </div>
     </section>
@@ -161,13 +162,13 @@
         <div class="infos">
             <div>
                 <h3>Dados sobre o robo:</h3>
-                Aceleração = <div id="aceleracaoRobo"></div>
-                Velocidade máxima = <div id="velocidadeMax" type="text"></div>
-                Massa = <div id="massaRobo" type="text"></div>
-                
+                <div id="aceleracaoRobo"></div>
+                <div id="velocidadeMax" type="text"></div>
+                <div id="massaRobo" type="text"></div>
             </div>
+            <br><br>
             <div>
-                <h3>Posição da bola no momento da interceptação:</h3>
+                <h3>Posição da bola no momento da interceptação:</h3><br>
                 <p>
                     <div id="vetorBolaXIntercept" type="text"></div>
                 </p>
@@ -175,8 +176,9 @@
                     <div id="vetorBolaYIntercept" type="text"></div>
                 </p>
             </div>
+            <br><br>
             <div>
-                <h3>Posição do robo no momento da interceptação:</h3>
+                <h3>Posição do robo no momento da interceptação:</h3><br>
                 <p> 
                     <div id="roboXIntercept" type="text"></div>
                 </p>
@@ -184,8 +186,9 @@
                     <div id="roboYIntercept" type="text"></div>
                 </p>
             </div>
+            <br><br>
             <div>
-                <h3>Velocidade da bola no momento da interceptação:</h3>
+                <h3>Velocidade da bola no momento da interceptação:</h3><br>
                 <p>
                     <div id="velocidadeXBolaIntercept" type="text"></div>
                 </p>
@@ -193,8 +196,9 @@
                     <div id="velocidadeYBolaIntercept" type="text"></div>
                 </p>
             </div>
+            <br><br>
             <div>
-                <h3>Velocidade do robo no momento da interceptação:</h3>
+                <h3>Velocidade do robo no momento da interceptação:</h3><br>
                 <p> 
                     <div id="velocidadeRoboXIntercept" type="text"></div>
                 </p>
@@ -202,8 +206,9 @@
                     <div id="velocidadeRoboYIntercept" type="text"></div>
                 </p>
             </div>
+            <br><br>
             <div>
-                <h3>Aceleração da bola:</h3>
+                <h3>Aceleração da bola:</h3><br>
                 <p> 
                     <div id="aceleracaoXBola" type="text"></div>
                 </p>
@@ -211,8 +216,9 @@
                     <div id="aceleracaoYBola" type="text"></div>
                 </p>
             </div>
+            <br><br>
             <div>
-                <h3>Distância percorrida pelo Robo até o momento da interceptação:</h3>
+                <h3>Distância percorrida pelo Robo até o momento da interceptação:</h3><br>
                 <p> 
                     <div id="distanciaRoboX" type="text"></div>
                 </p>
@@ -220,8 +226,9 @@
                     <div id="distanciaRoboY" type="text"></div>
                 </p>
             </div>
+            <br><br>
             <div>
-                <h3>Distância percorrida pela bola até o momento da interceptação:</h3>
+                <h3>Distância percorrida pela bola até o momento da interceptação:</h3><br>
                 <p> 
                     <div id="distanciaBolaX" type="text"></div>
                 </p>
@@ -229,10 +236,24 @@
                     <div id="distanciaBolaY" type="text"></div>
                 </p>
             </div>
+            <br><br>
+        </div>
+    </section>
+    <section id="graphs2">
+        <div class="graf-title" class="hidden" >
+            <h2>Aprofundamento 2</h2>
+        </div>
+        <div class="graficos">
+            <h2 class="graf-subtitles"  class="hidden" >Gráfico da posição X e Y do robo e da bola:</h2>
+            <section class="hidden">    
+                <p>Posição do robo e da bola  no eixo X e Y</p>
+                <div id="movObli" class="graf-canvas"></div>
+            </section>
         </div>
     </section>
 <footer>
-    
+    <hr>
+    <img src="images/fei-ciencia.png" alt="FEI">
 </footer>
 <script src="./components/scripts/main.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
