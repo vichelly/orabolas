@@ -211,7 +211,6 @@ function iniciarPrograma(){
             aprofundamento2Y[k-1] + (veloRobo[i]*(sin[i]*0.05))
         );
         if(AprofundamentoRobo2X[k] >= parseFloat(PontoZeroVX) - 0.107 && AprofundamentoRobo2X[k] <= parseFloat(PontoZeroVX) + 0.107 && AprofundamentoRobo2Y[k] >= parseFloat(PontoZeroVY) - 0.107 && AprofundamentoRobo2Y[k] <= parseFloat(PontoZeroVY) + 0.107){
-            j = i
             tempoDesaceleracao= vetorTempo[i];
             posicaoZeroBolaY=aprofundamento2Y[k-1];
             posicaoZeroBolaX=aprofundamento2X[k-1];
