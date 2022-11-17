@@ -228,8 +228,7 @@ function iniciarPrograma(){
 
     AprofundamentoRobo2X.push(posicaoIdealXdoRobo2);
     AprofundamentoRobo2Y.push(posicaoIdealYdoRobo2);
-    aprofundamento2X.push(posicaoZeroBolaX);
-    aprofundamento2Y.push(posicaoZeroBolaY);
+    
 
     AprofundamentoRobo2X.push(PosicaoZeroRoboX);
     AprofundamentoRobo2Y.push(PosicaoZeroRoboY);
@@ -258,12 +257,12 @@ function iniciarPrograma(){
         }
         cos.push(
             parseFloat(
-            (parseFloat(centroGolX) - aprofundamento2X[i]) / (GolDist[k])
+            (parseFloat(centroGolX) - aprofundamento2X[i-1]) / (GolDist[k])
             )
         );
         sin.push(
             parseFloat(
-            (parseFloat(centroGolY) - aprofundamento2Y[i]) / (GolDist[k])
+            (parseFloat(centroGolY) - aprofundamento2Y[i-1]) / (GolDist[k])
             )
         );
          // calcula a posicao futura do robo em cada componente 
