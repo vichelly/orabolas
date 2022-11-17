@@ -619,8 +619,8 @@ function informacoesCinematicas(){
     document.getElementById("velocidadeRoboXIntercept").innerHTML ="vx = "+ (roboX[j]-roboX[j-1])/(cos[j]*0.05) + " m/s";
     document.getElementById("velocidadeRoboYIntercept").innerHTML ="vy = "+ (roboY[j]-roboY[j-1])/(sin[j]*0.05) + " m/s";
 
-    document.getElementById("aceleracaoXBola").innerHTML ="ax = "+ aceleracaoBolaX + " m/s²";
-    document.getElementById("aceleracaoYBola").innerHTML ="ay = "+ aceleracaoBolaY + " m/s²";
+    document.getElementById("aceleracaoXBola").innerHTML ="ax = "+ aceleracaoXBola + " m/s²";
+    document.getElementById("aceleracaoYBola").innerHTML ="ay = "+ aceleracaoYBola + " m/s²";
     
     let RX = Math.abs(roboX[j] - roboX[0]);
     let RY = Math.abs(roboY[j] - roboY[0]);
