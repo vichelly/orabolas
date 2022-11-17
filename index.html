@@ -38,6 +38,13 @@
             correr em direção a bola, que estará em movimento, e atualizar sua trajetória a cada 0,2s. Aproveitamos para utilizar da regra de que a bola só pode ultrapassar em 20% o diâmetro do robô,
             e para que o robô, ao interceptar a bola, realize um lançamento oblíquo para que seja feito o gol.
         </p>
+        <br><br>
+        <h1>Explicação física</h1> <br>
+        <p class="hidden description">
+            Nosso programa consiste em pegar as posições X e Y do robô e gerar a distância inicial com a bola usando a distância entre dois pontos. Declaramos a aceleração do robo sendo 2,8 m/s para descobrir a velocidade usando aceleração pelo tempo juntamente com a velocidade inicial.
+            Descobrimos os valores dos seno e cosseno comparando a posição da bola pela do robô e dividindo pela distância relativa, calculamos s posição fututa do robô no eixo cartesiano X e Y levando em conta a posição atual somando a decomposição do vetor  velocidade.
+            Finalmente caso a bola entre no raio de interceptação a função inicial irá parar pois a interceptação terá ocorrido com sucesso.
+        </p>
     </section>
     <section>
         <div class="amigos">
